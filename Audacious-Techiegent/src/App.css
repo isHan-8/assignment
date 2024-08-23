@@ -1,0 +1,145 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  transition: width 0.3s ease-in-out;
+}
+.top-nav{
+  display: flex;
+  align-items: center; 
+  height: 60px; 
+  background-color: white;
+  border: 1px solid rgb(210, 210, 210);
+  z-index: 10;
+  position:fixed;
+  width: 100%;
+}
+.top-text{
+  color: black;
+  margin: 0; 
+}
+.sidebar{
+  background-color: white;
+  color: black;
+  height: 100vh;
+  transition: all 0.2s;
+  position: fixed;
+  width:48px !important;
+  border-right: 1px solid rgb(210, 210, 210);
+}
+.icon{
+  margin-bottom: 10px;
+}
+
+.link{
+  display: flex;
+  color: black;
+  padding: 10px 15px;
+  gap:55px;
+  transition: all  0.5s;
+  text-decoration: none;
+}
+.link:hover{
+  background-color: rgba(238, 238, 238, 0.932);
+  color: black;
+  transition: all 0.5s;
+}
+.main-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.logo{
+  cursor: pointer;
+  width: 48px;
+  padding:4px;
+  border-right: 1px solid rgb(210, 210, 210);
+  border-bottom: 1px solid rgb(210, 210, 210);
+}
+
+.search{
+  display:flex;
+  align-items: center;
+  flex: 1;
+  border-right: 1px solid rgb(210, 210, 210);
+  border-bottom: 1px solid rgb(210, 210, 210);
+  padding: 10px;
+  margin: 0px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-box{
+  margin-left: 48px;
+  border-right: 1px solid rgb(210, 210, 210);
+  border-bottom: 1px solid rgb(210, 210, 210);
+  width: 282px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  height: 100vh;
+  position: fixed;
+}
+
+.list{
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  margin: 6px 6px 6px 15px;
+  font-size: 19px;
+  gap: 10px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(99, 97, 97);
+  letter-spacing: 0.5px;
+}
+.list:hover{
+  background-color: rgba(238, 238, 238, 0.932);
+  border-radius: 4px;
+  padding: 5px;
+}
+hr.line{
+  border-top: 1px solid rgb(210, 210, 210);
+  width: 100%;
+  margin: 30px 0px 10px 0px;
+}
+
+.profile-container {
+  position: absolute;
+  top: 10px; 
+  right: 10px; 
+  display: flex;
+  align-items: center;
+}
+
+.profile {
+  width: 45px; 
+  height: 45px;
+  border-radius: 50%; 
+  object-fit: cover;
+  border: 2px solid #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  margin-right: 15px; 
+}
+
+.profile-container svg {
+  font-size: 24px; 
+  cursor: pointer;
+}
+.arrow-icon {
+  margin-left: 8px;
+  font-size: 20px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 150px;
+  z-index: 100;
+}
+
+.dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #f0f0f0;
+}
